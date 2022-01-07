@@ -6,8 +6,8 @@ export default function Card({ meta }) {
       <h3 className="font-extrabold text-xl text-emerald-500">
         <Link href={`/blog/${meta.id}`}>{meta.title}</Link>
       </h3>
-      <p className="text-white text-xs">{meta.date}</p>
-      <p className="text-white text-sm">{meta.description}</p>
+      <p className="text-white text-sm">{meta.date}</p>
+      <p className="text-white text-base">{meta.description}</p>
     </div>
   )
 }
