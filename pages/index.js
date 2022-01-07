@@ -31,7 +31,7 @@ export default function Home({ blogs }) {
   )
 }
 
-export async function getServerSideProps(context) {
+export async function getServerSideProps() {
   let blogs = await fetchData('/api/blog')
 
   return {
